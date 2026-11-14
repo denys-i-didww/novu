@@ -8,6 +8,7 @@ export * from './burst-sms/burst-sms.provider';
 export * from './clickatell/clickatell.provider';
 export * from './clicksend/clicksend.provider';
 export * from './cm-telecom/cm-telecom.provider';
+export * from './didww/didww.provider';
 export * from './eazy-sms/eazy-sms.provider';
 export * from './firetext/firetext.provider';
 export * from './forty-six-elks/forty-six-elks.provider';

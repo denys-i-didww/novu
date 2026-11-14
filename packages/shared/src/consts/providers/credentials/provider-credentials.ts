@@ -1643,6 +1643,40 @@ export const ruachSmsConfig: IConfigCredential[] = [
   ...smsConfigBase,
 ];
 
+export const didwwConfig: IConfigCredential[] = [
+  {
+    key: CredentialsKeyEnum.User,
+    displayName: 'Username',
+    description: 'Username of your DIDWW HTTP OUT SMS trunk',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.Password,
+    displayName: 'Password',
+    description: 'Password of your DIDWW HTTP OUT SMS trunk',
+    type: 'string',
+    required: true,
+  },
+  {
+    key: CredentialsKeyEnum.Region,
+    displayName: 'Region',
+    description: 'DIDWW Outbound SMS API endpoint to send requests to',
+    type: 'dropdown',
+    required: false,
+    value: 'global',
+    dropdown: [
+      { name: 'Global', value: 'global' },
+      { name: 'US (New York)', value: 'us' },
+      { name: 'US (Miami)', value: 'mia.us' },
+      { name: 'US (Los Angeles)', value: 'lac.us' },
+      { name: 'EU (Amsterdam)', value: 'eu' },
+      { name: 'Singapore', value: 'sg' },
+    ],
+  },
+  ...smsConfigBase,
+];
+
 export const telegramConfig: IConfigCredential[] = [
   {
     key: CredentialsKeyEnum.ApiToken,

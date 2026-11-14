@@ -8,6 +8,7 @@ export * from './burst-sms.handler';
 export * from './clickatell.handler';
 export * from './clicksend.handler';
 export * from './cm-telecom.handler';
+export * from './didww.handler';
 export * from './eazy-sms.handler';
 export * from './firetext.handler';
 export * from './forty-six-elks.handler';

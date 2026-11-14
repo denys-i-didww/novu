@@ -10,6 +10,7 @@ import {
   ClickatellHandler,
   ClicksendSmsHandler,
   CmTelecomHandler,
+  DIDWWSmsHandler,
   EazySmsHandler,
   FiretextSmsHandler,
   FortySixElksHandler,
@@ -83,6 +84,7 @@ export class SmsFactory implements ISmsFactory {
     new ISendProSmsHandler(),
     new CmTelecomHandler(),
     new RuachSmsHandler(),
+    new DIDWWSmsHandler(),
   ];
 
   getHandler(integration: Pick<IntegrationEntity, 'credentials' | 'channel' | 'providerId' | 'configurations'>) {

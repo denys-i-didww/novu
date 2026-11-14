@@ -11,6 +11,7 @@ import {
   clickatellConfig,
   clickSendConfig,
   cmTelecomConfig,
+  didwwConfig,
   eazySmsConfig,
   firetextConfig,
   fortySixElksConfig,
@@ -358,5 +359,13 @@ export const smsProviders: IProviderConfig[] = [
     credentials: ruachSmsConfig,
     docReference: `https://docs.novu.co/platform/integrations/sms/ruach-sms${UTM_CAMPAIGN_QUERY_PARAM}`,
     logoFileName: { light: 'ruach-sms.svg', dark: 'ruach-sms.svg' },
+  },
+  {
+    id: SmsProviderIdEnum.DIDWW,
+    displayName: 'DIDWW',
+    channel: ChannelTypeEnum.SMS,
+    credentials: didwwConfig,
+    docReference: 'https://doc.didww.com/sms/sms-trunks/http-out/http-out-trunk.html',
+    logoFileName: { light: 'didww.svg', dark: 'didww.svg' },
   },
 ];

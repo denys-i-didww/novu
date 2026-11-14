@@ -43,4 +43,5 @@ export const smsProviderSchemas = {
   sinch: genericProviderSchemas,
   'isendpro-sms': genericProviderSchemas,
   'ruach-sms': genericProviderSchemas,
+  didww: genericProviderSchemas,
 } as const satisfies Record<SmsProviderIdEnum, { output: JsonSchema }>;
